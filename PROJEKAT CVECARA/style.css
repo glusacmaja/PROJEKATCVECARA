@@ -1,0 +1,151 @@
+.logonav{
+    width: 140px;
+    height: 55px;
+    float:inline-start;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid #c84771;
+  }
+  
+nav li {
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: #c84771;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:mojfontnav;
+}
+
+@font-face {
+    font-family:mojfontnav;
+    src: url("font/PlaywriteHRLijeva.ttf");
+}
+  
+
+nav li a:hover {
+    background-color: #c84771;
+    color: white;
+}
+
+ .logobig{
+  margin:0;
+  width:100%;
+  height: 600px;
+ }
+
+.textpocetna h2{
+  text-align: center;
+  color:#c84771;
+  font-family: mojfontnav;
+  font-size: 30px;
+}
+
+.textpocetna {
+  background-color: bisque;
+  margin:0;
+}
+
+@font-face {
+  font-family: mojfonttextpocetna;
+  src: url("font/DeliusSwashCaps-Regular.ttf");
+}
+
+.textpocetna p{
+  padding: 0px 110px;
+  font-family: mojfonttextpocetna;
+  font-size: 18px;
+}
+
+@keyframes ovde {
+  from {background-color: #c84771;}
+  to {background-color:blueviolet;}
+}
+
+
+.textpocetna a{
+  width: 300px;
+  height: 200px;
+  animation-name: ovde;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+ .logofooter{
+  width: 140px;
+  height: 80px;
+  float:inline-start;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 20px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid #c84771;
+}
+
+footer li {
+  float: left;
+  color: #c84771;
+  display: block;
+  padding: 15px 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+footer li a {
+  display: block;
+  color: #c84771;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  float: right;
+}
+
+
+@media (max-width:768px) {
+  nav li a{
+    padding: 5px 30px;
+    font-size: 16px;
+  }
+
+  .logonav{
+    display:none;
+  }
+  
+  .logobig{
+    height: 300px;
+  }
+  
+  .textpocetna p{
+    padding: 0px 70px;
+    font-size: 14px;
+  }
+   footer img{
+    display: none;
+   }
+
+   footer li{
+    padding: 5px 5px;
+    font-size: 15px;
+    display:flex;
+    float: left;
+   }
+}
